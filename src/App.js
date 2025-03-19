@@ -1,4 +1,4 @@
-import React from 'react';  // React import is required for JSX in earlier versions or if you're not using React 17+
+import React from 'react';  
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Import your components
@@ -8,6 +8,9 @@ import Profile from './components/Profile';
 import Home from './pages/Home';
 import About from './pages/About';
 import NotFound from './pages/NotFound';
+
+const API_URL = process.env.REACT_APP_API_URL;
+console.log("API URL:", API_URL);
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
