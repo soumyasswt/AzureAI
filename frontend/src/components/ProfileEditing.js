@@ -13,7 +13,7 @@ const ProfileEditing = () => {
       if (!token) return; // Stop execution if token is missing
 
       try {
-        const response = await axios.get('http://localhost:3000/api/profile', {
+        const response = await axios.get('https://codesensei-ashy.vercel.app/api/profile', {
           headers: { Authorization: `Bearer ${token}` }
         });
         setUser(response.data);

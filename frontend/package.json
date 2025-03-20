@@ -22,7 +22,7 @@
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "https://codesensei-ashy.vercel.app",
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",

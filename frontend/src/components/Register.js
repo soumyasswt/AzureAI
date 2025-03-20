@@ -28,7 +28,7 @@ const Register = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/register', formData);
+      const response = await axios.post('https://codesensei-ashy.vercel.app/api/auth/register', formData);
       localStorage.setItem('authToken', response.data.token);  // Store token properly
       setSuccess(true);
       setError('');

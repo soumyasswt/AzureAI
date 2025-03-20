@@ -1,7 +1,7 @@
 const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/login', { email, password });
+      const response = await axios.post('https://codesensei-ashy.vercel.app/api/login', { email, password });
   
       const { token, user } = response.data;  // Simplified destructuring
       

@@ -22,7 +22,7 @@ const Login = () => {
     setError(''); // Clear previous errors
 
     try {
-      const response = await axios.post('http://localhost:3000/api/login', { email, password });
+      const response = await axios.post('https://codesensei-ashy.vercel.app/api/login', { email, password });
 
       // Save token & user profile
       localStorage.setItem('authToken', response.data.token);
